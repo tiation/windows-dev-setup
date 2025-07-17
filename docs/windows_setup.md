@@ -343,12 +343,12 @@ wsl --set-default-version 2
 2. **Configure Git credentials**:
    ```powershell
    git config --global user.name "Your Name"
-   git config --global user.email "your.email@example.com"
+   git config --global user.email "tiatheone@protonmail.com"
    ```
 
 3. **Set up SSH keys**:
    ```powershell
-   ssh-keygen -t ed25519 -C "your.email@example.com"
+   ssh-keygen -t ed25519 -C "tiatheone@protonmail.com"
    ```
 
 4. **Test your setup**:
