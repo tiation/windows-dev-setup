@@ -1,237 +1,318 @@
-# Windows Development Environment Setup
+# Project Name
 
-🚀 **Automated Windows Development Environment Setup Scripts**
+<!-- Hero Image with Dark Neon Theme -->
+<div align="center">
+  <img src=".screenshots/hero-banner.png" alt="Project Hero Banner" width="100%">
+</div>
 
-A comprehensive collection of modular PowerShell scripts to set up a complete development environment on Windows systems. Perfect for developers who want to quickly bootstrap their Windows workstation with all essential tools and configurations.
+<div align="center">
+  
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-00D9FF?style=for-the-badge&logo=github&logoColor=white)](https://tiaastor.github.io/windows-dev-setup)
+[![Documentation](https://img.shields.io/badge/Documentation-Complete-00FF88?style=for-the-badge&logo=gitbook&logoColor=white)](https://github.com/TiaAstor/windows-dev-setup/wiki)
+[![License](https://img.shields.io/badge/License-MIT-FF0080?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 
-## 🎯 What This Does
+</div>
 
-- **System Configuration**: Windows system preferences and tweaks
-- **Package Management**: Chocolatey, Winget, and Scoop package managers
-- **Development Environment**: Git, SSH, PowerShell setup, WSL configuration
-- **Runtime Setup**: Node.js, Python, .NET, Java, and language-specific environments
-- **Mobile Development**: Flutter, Android SDK, Visual Studio setup
-- **Container & Kubernetes**: Docker Desktop, Kubernetes tools
-- **Directory Structure**: Organized development workspace
-- **IDE & Tools**: Visual Studio, VS Code, JetBrains IDEs, and extensions
+## 🚀 About
 
-## 📁 Repository Structure
+**Brief, compelling description of what this project does and why it matters.**
 
-```
-windows-dev-setup/
-├── scripts/
-│   ├── 01_system_prefs.ps1        # System preferences and tweaks
-│   ├── 02_package_mgmt.ps1        # Package management (Chocolatey, Winget, Scoop)
-│   ├── 03_dev_env.ps1             # Development environment setup
-│   ├── 04_mobile_dev.ps1          # Mobile development tools
-│   ├── 05_cloud_devops.ps1        # Cloud and DevOps tools
-│   ├── 06_workspace_setup.ps1     # Directory structure and workspace
-│   ├── 07_ide_tools.ps1           # IDEs and development tools
-│   └── setup_master.ps1           # Master orchestration script
-├── docs/
-│   └── windows_setup.md           # Detailed setup documentation
-├── README.md                      # This file
-├── SCRIPT_ANALYSIS.md             # Script analysis and categorization
-├── FUNCTIONS_REFERENCE.md         # Common functions reference
-└── LICENSE                        # MIT License
-```
+<div align="center">
+  <img src=".screenshots/demo-overview.png" alt="Project Overview" width="80%">
+</div>
+
+---
+
+## ✨ Features
+
+<!-- Feature showcase with screenshots -->
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🎯 Key Feature 1</h3>
+      <img src=".screenshots/feature-1.png" alt="Feature 1 Screenshot" width="100%">
+      <p>Description of feature 1 with benefits</p>
+    </td>
+    <td width="50%">
+      <h3>⚡ Key Feature 2</h3>
+      <img src=".screenshots/feature-2.png" alt="Feature 2 Screenshot" width="100%">
+      <p>Description of feature 2 with benefits</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🔥 Key Feature 3</h3>
+      <img src=".screenshots/feature-3.png" alt="Feature 3 Screenshot" width="100%">
+      <p>Description of feature 3 with benefits</p>
+    </td>
+    <td width="50%">
+      <h3>🌟 Key Feature 4</h3>
+      <img src=".screenshots/feature-4.png" alt="Feature 4 Screenshot" width="100%">
+      <p>Description of feature 4 with benefits</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🎨 Live Demo
+
+<div align="center">
+  <a href="https://tiaastor.github.io/windows-dev-setup" target="_blank">
+    <img src=".screenshots/demo-preview.png" alt="Live Demo Preview" width="80%">
+  </a>
+  <br>
+  <a href="https://tiaastor.github.io/windows-dev-setup" target="_blank">
+    <img src="https://img.shields.io/badge/🔗%20View%20Live%20Demo-00D9FF?style=for-the-badge&logo=github&logoColor=white" alt="View Live Demo">
+  </a>
+</div>
+
+---
+
+## 🏗️ Architecture
+
+<div align="center">
+  <img src=".screenshots/architecture-diagram.png" alt="Architecture Diagram" width="90%">
+</div>
+
+### System Components
+
+- **Component 1**: Description and purpose
+- **Component 2**: Description and purpose
+- **Component 3**: Description and purpose
+
+---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Windows 10 version 1903 or later** (Windows 11 recommended)
-- **PowerShell 5.1 or PowerShell 7+**
-- **Administrator privileges** for some installations
-- **Internet connection**
 
-### Option 1: Run Everything (Recommended for new setups)
-```powershell
-# Open PowerShell as Administrator
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-git clone https://github.com/tiation/windows-dev-setup.git
+```bash
+# List prerequisites here
+node --version  # >= 18.0.0
+npm --version   # >= 8.0.0
+```
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/TiaAstor/windows-dev-setup.git
 cd windows-dev-setup
-.\scripts\setup_master.ps1
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-### Option 2: Run Individual Modules
-```powershell
-# System preferences and tweaks
-.\scripts\01_system_prefs.ps1
+### Development Workflow
 
-# Install packages
-.\scripts\02_package_mgmt.ps1
+<div align="center">
+  <img src=".screenshots/development-workflow.png" alt="Development Workflow" width="70%">
+</div>
 
-# Development environment
-.\scripts\03_dev_env.ps1
+---
 
-# Mobile development tools
-.\scripts\04_mobile_dev.ps1
+## 📱 Screenshots
 
-# Cloud and DevOps tools
-.\scripts\05_cloud_devops.ps1
+### Desktop Interface
 
-# Workspace setup
-.\scripts\06_workspace_setup.ps1
+<div align="center">
+  <img src=".screenshots/desktop-interface.png" alt="Desktop Interface" width="100%">
+</div>
 
-# IDEs and tools
-.\scripts\07_ide_tools.ps1
+### Mobile Interface
+
+<div align="center">
+  <img src=".screenshots/mobile-interface.png" alt="Mobile Interface" width="60%">
+</div>
+
+### Dark Theme
+
+<div align="center">
+  <img src=".screenshots/dark-theme.png" alt="Dark Theme Interface" width="100%">
+</div>
+
+---
+
+## 🛠️ Technology Stack
+
+<div align="center">
+  <img src=".screenshots/tech-stack.png" alt="Technology Stack" width="80%">
+</div>
+
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Express
+- **Database**: PostgreSQL
+- **Deployment**: Docker, GitHub Actions
+
+---
+
+## 📊 Performance Metrics
+
+<div align="center">
+  <img src=".screenshots/performance-metrics.png" alt="Performance Metrics" width="90%">
+</div>
+
+---
+
+## 🔧 Configuration
+
+### Environment Variables
+
+```env
+# Copy to .env.local
+NODE_ENV=development
+DATABASE_URL=postgresql://username:password@localhost:5432/database
+API_KEY=your-api-key-here
 ```
 
-### Option 3: Auto-run Mode (No prompts)
-```powershell
-.\scripts\setup_master.ps1 -AutoRun
-```
+### Configuration Screenshots
 
-## 🛠️ What Gets Installed
+<div align="center">
+  <img src=".screenshots/configuration-setup.png" alt="Configuration Setup" width="70%">
+</div>
 
-### Package Managers
-- **Chocolatey** - Windows package manager
-- **Winget** - Microsoft's package manager
-- **Scoop** - Command-line installer for Windows
+---
 
-### Development Tools
-- **Git** with Git Bash and credentials manager
-- **Windows Terminal** with custom configurations
-- **PowerShell 7** with modules and profiles
-- **Windows Subsystem for Linux (WSL2)** with Ubuntu
+## 📚 Documentation
 
-### Programming Languages & Runtimes
-- **Node.js** (via nvm-windows)
-- **Python 3.11** with pip and virtual environments
-- **.NET SDK** (latest LTS)
-- **Java** (OpenJDK and Oracle)
-- **Go** programming language
-- **Rust** development environment
+<div align="center">
+  <a href="https://github.com/TiaAstor/windows-dev-setup/wiki" target="_blank">
+    <img src=".screenshots/documentation-preview.png" alt="Documentation Preview" width="80%">
+  </a>
+  <br>
+  <a href="https://github.com/TiaAstor/windows-dev-setup/wiki" target="_blank">
+    <img src="https://img.shields.io/badge/📖%20Full%20Documentation-00FF88?style=for-the-badge&logo=gitbook&logoColor=white" alt="Full Documentation">
+  </a>
+</div>
 
-### Development Environments
-- **Visual Studio 2022** (Community/Professional)
-- **Visual Studio Code** with extensions
-- **JetBrains IDEs** (IntelliJ, WebStorm, etc.)
-- **Android Studio** for mobile development
-- **Docker Desktop** for containerization
+### Quick Links
 
-### Mobile Development
-- **Flutter SDK** with Windows desktop support
-- **Android SDK** and tools
-- **React Native CLI**
-- **Ionic CLI**
-- **Xamarin** (with Visual Studio)
+- [📘 User Guide](docs/user-guide.md)
+- [🔧 API Reference](docs/api-reference.md)
+- [🏗️ Architecture Guide](docs/architecture.md)
+- [🚀 Deployment Guide](docs/deployment.md)
 
-### Cloud & DevOps Tools
-- **Docker Desktop** with Kubernetes
-- **Azure CLI** and Azure PowerShell
-- **AWS CLI** and AWS Tools for PowerShell
-- **Google Cloud SDK**
-- **Terraform** and infrastructure tools
-- **Kubernetes** tools (kubectl, helm, k9s)
-
-### Productivity Applications
-- **Browsers**: Chrome, Firefox, Edge Dev
-- **Communication**: Slack, Discord, Teams
-- **Media**: VLC, OBS Studio
-- **Utilities**: 7-Zip, WinRAR, PowerToys
-- **Note-taking**: Obsidian, Notion
-
-### System Enhancements
-- **Windows Terminal** with Oh My Posh
-- **PowerShell modules** for productivity
-- **WSL2** with Ubuntu distribution
-- **Hyper-V** for virtualization
-- **Windows Features** optimization
-
-## 🔧 Customization
-
-Each script is modular and can be customized:
-
-1. **Edit variables** at the top of each script
-2. **Comment out** sections you don't need
-3. **Add your own** package lists or configurations
-4. **Modify prompts** for different confirmation behavior
-
-## 📋 Prerequisites
-
-- Windows 10 version 1903 or later (Windows 11 recommended)
-- PowerShell 5.1 or PowerShell 7+
-- Administrator privileges for some installations
-- Internet connection
-- At least 20GB free disk space
+---
 
 ## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test on a clean Windows installation
-5. Submit a pull request
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+<div align="center">
+  <img src=".screenshots/contribution-workflow.png" alt="Contribution Workflow" width="70%">
+</div>
 
-## 📖 Documentation
+### Development Setup
 
-- [Detailed Setup Guide](docs/windows_setup.md)
-- [Script Analysis](SCRIPT_ANALYSIS.md)
-- [Functions Reference](FUNCTIONS_REFERENCE.md)
+```bash
+# Fork the repository
+git clone https://github.com/your-username/windows-dev-setup.git
+cd windows-dev-setup
 
-## 🔒 Security
+# Create feature branch
+git checkout -b feature/amazing-feature
 
-- Scripts use official package repositories
-- Execution policy is set appropriately
-- No credentials are stored in scripts
-- All downloads are from trusted sources
+# Make changes and commit
+git commit -m "Add amazing feature"
 
-## 📜 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Inspired by various Windows setup scripts and dotfiles
-- Built for developers who value automation and consistency
-- Designed with security and modularity in mind
-
----
-
-## 🎮 Gaming & Entertainment (Optional)
-
-The scripts can optionally install:
-- **Steam** gaming platform
-- **Discord** for communication
-- **OBS Studio** for streaming
-- **VLC Media Player**
-- **Spotify** desktop app
-
----
-
-## 🏢 Enterprise Features
-
-- **Windows Subsystem for Linux (WSL2)**
-- **Hyper-V** virtualization
-- **Windows Terminal** with custom profiles
-- **PowerShell 7** with enterprise modules
-- **Group Policy** compatible configurations
-
----
-
-**⚡ Ready to supercharge your Windows development environment?**
-
-```powershell
-git clone https://github.com/tiation/windows-dev-setup.git && cd windows-dev-setup && .\scripts\setup_master.ps1
+# Push to branch
+git push origin feature/amazing-feature
 ```
 
-## Related Repositories
+---
 
-This repository is part of the Tiation GitHub ecosystem. For a complete overview of all repositories and their relationships, see the [Repository Index](./REPOSITORY_INDEX.md).
+## 🧪 Testing
 
-### Direct Dependencies
-- [git-workspace](../git-workspace/) - Git workflow tools
-- [workflows](../workflows/) - Automation workflows
-- [server-configs-gae](../server-configs-gae/) - Server configurations
+<div align="center">
+  <img src=".screenshots/testing-dashboard.png" alt="Testing Dashboard" width="80%">
+</div>
 
-### Quick Links
-- [Repository Index](./REPOSITORY_INDEX.md) - Complete repository overview
-- [Development Setup](../ubuntu-dev-setup/README.md) - Development environment setup
-- [Workflows](../workflows/) - CI/CD templates
-- [Infrastructure](../server-configs-gae/) - Deployment configurations
+```bash
+# Run all tests
+npm test
+
+# Run tests with coverage
+npm run test:coverage
+
+# Run end-to-end tests
+npm run test:e2e
+```
 
 ---
-*Part of the [Tiation](../tiation/) ecosystem*
+
+## 🚀 Deployment
+
+<div align="center">
+  <img src=".screenshots/deployment-pipeline.png" alt="Deployment Pipeline" width="90%">
+</div>
+
+### Production Deployment
+
+```bash
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+---
+
+## 📈 Roadmap
+
+<div align="center">
+  <img src=".screenshots/roadmap.png" alt="Project Roadmap" width="90%">
+</div>
+
+- [x] Core functionality
+- [x] Dark theme implementation
+- [ ] Mobile app version
+- [ ] Advanced analytics
+- [ ] Third-party integrations
+
+---
+
+## 📞 Support
+
+<div align="center">
+  <img src=".screenshots/support-channels.png" alt="Support Channels" width="70%">
+</div>
+
+- 📧 **Email**: [support@example.com](mailto:support@example.com)
+- 💬 **Discord**: [Join our community](https://discord.gg/example)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/TiaAstor/windows-dev-setup/issues)
+- 📖 **Wiki**: [Documentation](https://github.com/TiaAstor/windows-dev-setup/wiki)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌟 Acknowledgments
+
+<div align="center">
+  <img src=".screenshots/acknowledgments.png" alt="Acknowledgments" width="60%">
+</div>
+
+- Thanks to all contributors
+- Special thanks to the open-source community
+- Inspired by modern development practices
+
+---
+
+<div align="center">
+  <img src=".screenshots/footer-banner.png" alt="Footer Banner" width="100%">
+  
+  **⭐ Star this repository if you find it helpful! ⭐**
+  
+  <a href="https://github.com/TiaAstor/windows-dev-setup">
+    <img src="https://img.shields.io/github/stars/TiaAstor/windows-dev-setup?style=social&label=Star&maxAge=2592000" alt="GitHub Stars">
+  </a>
+</div>
